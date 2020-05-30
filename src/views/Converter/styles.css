@@ -1,0 +1,61 @@
+:root {
+  --main-theme-color: #3da4ab;
+  --main-error-message-color: #e84a5f;
+}
+
+div#container {
+  width: 100%;
+  height: calc(100vh - 72px);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+form {
+  width: 640px;
+  height: 420px;
+  background: #fff;
+  box-shadow: 2px 2px 8px #ccc;
+  border-radius: 5px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+input[type="number"] {
+  width: 270px;
+  height: 42px;
+  padding: 0 8px;
+  font-size: 12pt;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+input[type="submit"] {
+  width: 150px;
+  height: 42px;
+  border:none !important;
+  border-radius: 5px;
+  background: var(--main-theme-color);
+  color: #fff;
+  font-size: 12pt;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+h1 {
+  font-size: 22pt;
+  font-weight: bold;
+  color: var(--main-theme-color);
+  margin-bottom: 25px;
+}
+
+span {
+  font-size: 12pt;
+  font-weight: bold;
+  color: var(--main-error-message-color);
+  margin-bottom: 8px;
+}
